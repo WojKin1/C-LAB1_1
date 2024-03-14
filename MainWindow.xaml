@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600">
+    <Grid>
+        <Canvas>
+            <StackPanel Height="68" Width="207" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="12" Canvas.Left="10" RenderTransformOrigin="0.535,0.423">
+                <TextBlock TextWrapping="Wrap" Height="16" Width="134" RenderTransformOrigin="0.5,0.5">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0.646"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform><Run Language="pl-pl" Text="Podaj a:"/></TextBlock>
+                <TextBox x:Name="danaa" TextWrapping="Wrap" Width="146" ></TextBox>
+                <TextBlock TextWrapping="Wrap" Width="133"><Run Language="pl-pl" Text="Podaj b:"/></TextBlock>
+                <TextBox x:Name="danab" TextWrapping="Wrap" Width="147" ></TextBox>
+            </StackPanel>
+            <StackPanel Height="60" Width="176" HorizontalAlignment="Left" Canvas.Left="279" VerticalAlignment="Center" Canvas.Top="12">
+                <TextBlock TextWrapping="Wrap" Width="153"><Run Language="pl-pl" Text="Podaj c:"/></TextBlock>
+                <TextBox x:Name="danac" TextWrapping="Wrap" Width="162"/>
+            </StackPanel>
+            <Button x:Name="oblicz" Content="Oblicz x1 x2" Canvas.Left="237" Canvas.Top="88" Height="35" Width="115" Click="Button_Click"/>
+            <TextBlock x:Name="wynik" Canvas.Left="21" TextWrapping="Wrap" Canvas.Top="192" Height="24" Width="547" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <TextBlock.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FFFB0000" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBlock.Background>
+            </TextBlock>
+
+        </Canvas>
+
+    </Grid>
+</Window>
